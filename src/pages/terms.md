@@ -1,120 +1,120 @@
 ---
-title: 'Terms and Conditions'
+title: '利用規約'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+_最終更新日_: 2024年5月26日
 
-Please read these terms and conditions carefully before using Our Service.
+当サービスをご利用になる前に、これらの利用規約を注意深くお読みください。
 
-## Interpretation and Definitions
+## 解釈と定義
 
-### Interpretation
+### 解釈
 
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+最初の文字が大文字の単語は、以下の条件で定義された意味を持ちます。以下の定義は、単数形または複数形であっても同じ意味を持ちます。
 
-### Definitions
+### 定義
 
-For the purposes of these Terms and Conditions:
+これらの利用規約の目的のために:
 
-- **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+- **関連会社**とは、50％以上の株式、持分、またはその他の議決権を有する証券を所有することにより、一方の当事者を支配する、または支配される、または共通の支配下にある実体を意味します。
 
-- **Country** refers to: California, United States
+- **国**とは、アメリカ合衆国カリフォルニア州を指します。
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AstroWind LLC, 1 Cupertino, CA 95014.
+- **会社**（この契約で「会社」、「私たち」、「私たちの」とも呼ばれます）は、AstroWind LLC, 1 Cupertino, CA 95014を指します。
 
-- **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+- **デバイス**とは、コンピュータ、携帯電話、デジタルタブレットなど、サービスにアクセスできる任意の装置を意味します。
 
-- **Service** refers to the Website.
+- **サービス**とは、ウェブサイトを指します。
 
-- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement is a Demo.
+- **利用規約**（「規約」とも呼ばれます）は、サービスの使用に関してあなたと会社との間の全ての合意を形成するこれらの利用規約を意味します。この利用規約はデモです。
 
-- **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+- **第三者のソーシャルメディアサービス**とは、サービスによって表示される、含まれる、または利用可能にされる可能性のある第三者によって提供されるサービスやコンテンツ（データ、情報、製品、サービスを含む）を意味します。
 
-- **Website** refers to AstroWind, accessible from [https://astrowind.vercel.app](https://astrowind.vercel.app)
+- **ウェブサイト**とは、[https://astrowind.vercel.app](https://astrowind.vercel.app)からアクセス可能なAstroWindを指します。
 
-- **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+- **あなた**とは、サービスをアクセスまたは使用する個人、またはそのような個人が代表する会社やその他の法人を指します。
 
-## Acknowledgment
+## 承認
 
-These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+これらは、このサービスの使用を管理する利用規約であり、あなたと会社との間の契約を運用します。これらの利用規約は、サービスの使用に関してすべてのユーザーの権利と義務を定めています。
 
-Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+サービスへのアクセスおよび使用は、これらの利用規約の受け入れと遵守に条件付けられています。これらの利用規約は、サービスにアクセスまたは使用するすべての訪問者、ユーザー、およびその他の人々に適用されます。
 
-By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
+サービスにアクセスまたは使用することにより、あなたはこれらの利用規約に拘束されることに同意します。これらの利用規約のいずれかに同意しない場合、サービスにアクセスすることはできません。
 
-You represent that you are over the age of 18\. The Company does not permit those under 18 to use the Service.
+あなたは、18歳以上であることを表明します。会社は18歳未満の者がサービスを使用することを許可していません。
 
-Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+サービスへのアクセスおよび使用は、また、あなたが会社のプライバシーポリシーの受け入れと遵守に条件付けられています。私たちのプライバシーポリシーは、アプリケーションまたはウェブサイトを使用する際にあなたの個人情報がどのように収集、使用、開示されるかについての私たちの方針と手続きを説明し、あなたのプライバシー権利と法律による保護について説明します。当サービスを使用する前に、私たちのプライバシーポリシーを注意深くお読みください。
 
-## Links to Other Websites
+## 他のウェブサイトへのリンク
 
-Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+当サービスには、会社が所有または管理していない第三者のウェブサイトやサービスへのリンクが含まれる場合があります。
 
-The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+会社は、第三者のウェブサイトやサービスの内容、プライバシーポリシー、または慣行を管理することはできません。さらに、会社は、そのようなコンテンツ、商品、またはサービスに関連して使用または依存することによって生じたまたは生じたと主張されるいかなる損害または損失についても、直接的または間接的に、責任を負わないことを認め、同意します。
 
-We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
+あなたが訪問する第三者のウェブサイトやサービスの利用規約とプライバシーポリシーを読むことを強くお勧めします。
 
-## Termination
+## 解約
 
-We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+当社は、あなたがこれらの利用規約に違反した場合を含むがこれに限定されない任意の理由で、事前の通知または責任なしに、直ちにあなたのアクセスを解約または停止することがあります。
 
-Upon termination, Your right to use the Service will cease immediately.
+解約により、サービスの使用権は直ちに終了します。
 
-## Limitation of Liability
+## 責任の制限
 
-Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.
+あなたが被る可能性のあるいかなる損害にもかかわらず、この規約のいずれかの条項に基づく会社およびその供給者の全責任は、あなたがサービスを通じて実際に支払った金額、またはあなたが何も購入していない場合は100米ドルに限定されます。
 
-To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+適用法の最大限の範囲内で、会社またはその供給者は、サービスの使用または使用不能、第三者のソフトウェアおよび/または第三者のハードウェアとの使用、またはこの規約のいずれかの条項に関連して、利益の損失、データまたはその他の情報の損失、事業の中断、個人的な傷害、プライバシーの損失を含むがこれに限定されない、いかなる特別、偶白、間接的、または結果的損害についても責任を負わないものとします（会社またはいずれかの供給者がそのような損害の可能性について助言を受けていた場合でも、また救済手段がその本質的目的を達成しなかった場合でも）。
 
-Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
+いくつかの州では、黙示の保証の排除または偶白または結果的損害の責任の制限を認めていないため、上記の制限のいくつかは適用されない場合があります。これらの州では、各当事者の責任は法律で許される最大限の範囲で制限されます。
 
-## "AS IS" and "AS AVAILABLE" Disclaimer
+## 「現状有姿」および「利用可能な状態」の免責事項
 
-The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.
+サービスは、「現状有姿」および「利用可能な状態」で、いかなる種類の保証もなく、すべての欠陥および不具合を含んで提供されます。適用法の最大限の範囲内で、会社は、自身のために、またその関連会社およびそれらの各々のライセンサーおよびサービス提供者を代表して、サービスに関して、商品性、特定目的への適合性、所有権および非侵害の黙示的保証を含む、明示的、黙示的、法定的またはその他のすべての保証を明示的に放棄します。取引の過程、実施の過程、または慣行から生じる可能性のある保証を含みます。これに限定されることなく、会社は、サービスがあなたの要件を満たすこと、意図した結果を達成すること、他のソフトウェア、アプリケーション、システム、またはサービスと互換性があること、中断なく運用されること、パフォーマンスまたは信頼性の基準を満たすこと、またはエラーがないこと、または発生したエラーや欠陥が修正されることを保証または約束しません。
 
-Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
+上記に限定されることなく、会社または会社の提供者は、以下についてのいかなる種類の表明または保証も行いません：(i) サービスの運用または利用可能性、またはそこに含まれる情報、コンテンツ、資料、または製品について；(ii) サービスが中断されることなく、またはエラーがないこと；(iii) サービスを通じて提供される情報またはコンテンツの正確性、信頼性、または最新性について；または (iv) サービス、そのサーバー、コンテンツ、または会社を代表して送信される電子メールがウイルス、スクリプト、トロイの木馬、ワーム、マルウェア、タイムボム、またはその他の有害な成分を含まないこと。
 
-Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
+一部の管轄区域では、特定の種類の保証の排除または消費者の適用される法定権利に関する制限の排除が認められていないため、上記の排除および制限の全部または一部があなたに適用されない場合があります。しかし、そのような場合でも、このセクションに記載されている排除および制限は、適用法によって許される最大限の範囲で適用されます。
 
-## Governing Law
+## 準拠法
 
-The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+この規約およびサービスの使用には、その衝突法を除外した国の法律が適用されます。アプリケーションの使用は、その他の地方、州、国、または国際法の対象となる場合があります。
 
-## Disputes Resolution
+## 紛争解決
 
-If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
+サービスに関して何らかの懸念または紛争がある場合、あなたはまず非公式に会社に連絡して紛争を解決しようとすることに同意します。
 
-## For European Union (EU) Users
+## 欧州連合（EU）ユーザーのために
 
-If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
+あなたが欧州連合の消費者である場合、あなたはあなたが居住する国の法律の必須条項の恩恵を受けることになります。
 
-## United States Legal Compliance
+## アメリカ合衆国の法的遵守
 
-You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a "terrorist supporting" country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
+あなたは、(i) アメリカ合衆国政府の禁輸措置の対象となっている国に位置していないこと、および (ii) アメリカ合衆国政府によって「テロ支援国」と指定された国に位置していないこと、および (iii) アメリカ合衆国政府の禁止または制限対象者リストに記載されていないことを表明し、保証します。
 
-## Severability and Waiver
+## 分離可能性と放棄
 
-### Severability
+### 分離可能性
 
-If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+これらの規約のいずれかの条項が執行不能または無効とされた場合、その条項は適用法によって可能な限りその目的を達成するように変更および解釈され、残りの条項は完全な効力を持続します。
 
-### Waiver
+### 放棄
 
-Except as provided herein, the failure to exercise a right or to require performance of an obligation under these Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach.
+ここに記載されているものを除き、権利の行使または義務の履行を要求しないことは、その後いつでもその権利を行使することやその義務を要求することを妨げるものではなく、違反の放棄はその後の違反の放棄とはなりません。
 
-## Translation Interpretation
+## 翻訳の解釈
 
-These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
+これらの利用規約は、私たちがサービスで提供している場合、翻訳されている可能性があります。紛争の場合、元の英語のテキストが優先されることに同意します。
 
-## Changes to These Terms and Conditions
+## これらの利用規約の変更
 
-We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
+私たちは、独自の裁量により、いつでもこれらの規約を変更または置換する権利を留保します。改訂が重要な場合、新しい規約が効力を発する前に少なくとも30日間の通知を合理的に努力して提供します。何が重要な変更を構成するかは、私たちの独自の裁量により決定されます。
 
-By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+改訂後の規約が効力を発する後にサービスにアクセスまたは使用を続けることにより、あなたは改訂された規約に拘束されることに同意します。新しい規約に全体的または部分的に同意しない場合は、ウェブサイトおよびサービスの使用を中止してください。
 
-## Contact Us
+## お問い合わせ
 
-If you have any questions about these Terms and Conditions, You can contact us:
+これらの利用規約に関するご質問がございましたら、お問い合わせください：
 
-- By email: somecoolemail@domain.com
+- By email: [company@cor-jp.com](mailto:)

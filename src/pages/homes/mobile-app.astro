@@ -15,10 +15,10 @@ import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 
 const appStoreImg = '~/assets/images/app-store.png';
-const appStoreDownloadLink = 'https://github.com/onwidget/astrowind';
+const appStoreDownloadLink = 'https://www.apple.com/jp/app-store/';
 
 const googlePlayImg = '~/assets/images/google-play.png';
-const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
+const googlePlayDownloadLink = 'https://play.google.com/store/games?hl=ja&gl=US';
 
 const metadata = {
   title: 'Mobile App Homepage',
@@ -49,23 +49,21 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Mobile App Web Demo"
+    tagline="スマホアプリページデモ"
     image={{
       src: 'https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
       alt: 'AstroWind Hero Image',
     }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">AstroWind App</span>: <br /> professional websites <span
-        class="hidden xl:inline">made easy</span
-      >
+      <span class="text-accent dark:text-white highlight"> Impression+ App </span>
+      <br />
+      初めましてに驚きを
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Unlock boundless creativity at your fingertips: your gateway to innovative design.
-      </span>
-      Download now and embark on a journey to elevate your projects like never before.
+      <span class="hidden sm:inline"> あなたのビジネスにデジタルマーケティングを取り入れましょう。 </span>
+      ダウンロードして、顧客に新しい体験を提供しましょう。
     </Fragment>
 
     <div slot="actions" class="flex max-w-sm gap-4">
@@ -83,14 +81,14 @@ const metadata = {
 
   <Features3
     id="features"
-    title="How to use our app?"
-    subtitle="Tired of spending hours crafting documents from scratch? Our app offers an innovative solution. With a wide array of professionally designed templates, you can now create stunning documents in minutes. Explore our templates now and experience the difference."
+    title="アプリの使い方は？"
+    subtitle="書類を一から作成するのに何時間も費やすことにうんざりしていませんか?私たちのアプリは革新的なソリューションを提供します。プロがデザインした豊富なテンプレートを使用して、数分で素晴らしいドキュメントを作成できるようになりました。今すぐテンプレートを試して違いを体験してください。"
     tagline="Step-by-step guide"
     columns={2}
     items={[
       {
-        title: 'Download and install the app',
-        description: `Begin your journey by downloading our user-friendly app from your device's app store or our official website.`,
+        title: 'アプリをダウンロードしてインストールする',
+        description: `アプリストアからアプリをダウンロードして、新しい体験を始めましょう。`,
         icon: 'tabler:square-number-1',
       },
       {

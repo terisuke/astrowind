@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Impression+
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: Impression+
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Enhance your business's first impression with our subscription-based homepage creation, NFC smart business cards, and WebAR PR pages. Perfect for small to medium-sized businesses seeking a strong online presence."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Impression+
     images:
       - url: '~/assets/images/default.png'
         width: 1200

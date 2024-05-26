@@ -3,22 +3,22 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Designs',
       links: [
         {
-          text: 'SaaS',
+          text: 'SaaS向け',
           href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Startup',
+          text: 'Startup向け',
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Mobile App',
+          text: 'Mobile App向け',
           href: getPermalink('/homes/mobile-app'),
         },
         {
-          text: 'Personal',
+          text: 'Personal向け',
           href: getPermalink('/homes/personal'),
         },
       ],
@@ -27,60 +27,60 @@ export const headerData = {
       text: 'Pages',
       links: [
         {
-          text: 'Features (Anchor Link)',
+          text: 'アンカーリンク例',
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
+          text: 'サービスページ',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: '価格ページ',
           href: getPermalink('/pricing'),
         },
         {
-          text: 'About us',
+          text: 'Aboutぺージ',
           href: getPermalink('/about'),
         },
         {
-          text: 'Contact',
+          text: 'お問い合わせページ',
           href: getPermalink('/contact'),
         },
         {
-          text: 'Terms',
+          text: '規約ページ',
           href: getPermalink('/terms'),
         },
         {
-          text: 'Privacy policy',
+          text: 'プライバシーポリシーぺージ',
           href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: 'Landing',
+      text: 'LP🚧',
       links: [
         {
-          text: 'Lead Generation',
+          text: '見込み客獲得ページ',
           href: getPermalink('/landing/lead-generation'),
         },
         {
-          text: 'Long-form Sales',
+          text: 'サービス&自社紹介ページ',
           href: getPermalink('/landing/sales'),
         },
         {
-          text: 'Click-Through',
+          text: 'サービス概要ページ',
           href: getPermalink('/landing/click-through'),
         },
         {
-          text: 'Product Details (or Services)',
+          text: 'サービス詳細ページ',
           href: getPermalink('/landing/product'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
+          text: 'Coming Soonページ',
           href: getPermalink('/landing/pre-launch'),
         },
         {
-          text: 'Subscription',
+          text: 'サブスクリプション登録ページ',
           href: getPermalink('/landing/subscription'),
         },
       ],
@@ -89,33 +89,28 @@ export const headerData = {
       text: 'Blog',
       links: [
         {
-          text: 'Blog List',
+          text: 'リストページ',
           href: getBlogPermalink(),
         },
         {
-          text: 'Article',
+          text: '記事ページ',
           href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
         },
         {
-          text: 'Article (with MDX)',
+          text: '記事の書き方',
           href: getPermalink('markdown-elements-demo-post', 'post'),
         },
         {
-          text: 'Category Page',
+          text: 'カテゴリーページ',
           href: getPermalink('tutorials', 'category'),
         },
         {
-          text: 'Tag Page',
+          text: 'タグページ',
           href: getPermalink('astro', 'tag'),
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
@@ -123,17 +118,17 @@ export const footerData = {
     {
       title: 'Product',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'サービス詳細', href: '#' },
+        { text: 'セキュリティ🚧', href: '#' },
+        { text: '開発チーム🚧', href: '#' },
+        { text: '商用利用について🚧', href: '#' },
+        { text: '利用者の声🚧', href: '#' },
+        { text: '価格', href: '#' },
+        { text: 'Resources', href: 'https://github.com/onwidget/astrowind' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Platform🚧',
       links: [
         { text: 'Developer API', href: '#' },
         { text: 'Partners', href: '#' },
@@ -143,41 +138,34 @@ export const footerData = {
       ],
     },
     {
-      title: 'Support',
+      title: 'Development',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Docs', href: 'https://docs.astro.build/en/getting-started/' },
+        { text: 'GitHub', href: 'https://github.com/onwidget/astrowind' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'About', href: 'https://cor-jp.com/about/' },
+        { text: 'Press', href: 'https://cor-jp.com/pricing/' },
+        { text: 'Contact', href: 'https://cor-jp.com/contact/' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: '利用規約', href: getPermalink('/terms') },
+    { text: 'プライバシーポリシー', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/Cor_instrument' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/terisuke' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="/landing/src/assets/favicons/favicon32.png" alt="onWidget logo" loading="lazy"></img>
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://cor-jp.com/"> Cor.Inc.</a> · All rights reserved.
   `,
 };
