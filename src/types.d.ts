@@ -1,5 +1,5 @@
-import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
-import type { HTMLAttributes, ImageMetadata } from 'astro/types';
+import type { AstroComponentFactory } from 'astro/dist/runtime/server/index.js';
+import type { HTMLAttributes } from 'astro/types';
 
 export interface Post {
   /** A unique ID number that identifies a post. */
@@ -139,6 +139,7 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
+  href?: string;
 }
 
 export interface Price {
@@ -162,7 +163,7 @@ export interface Testimonial {
 }
 
 export interface Input {
-  type: HTMLInputTypeAttribute;
+  type: string;
   name: string;
   label?: string;
   autocomplete?: string;
@@ -285,4 +286,6 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
   callToAction?: CallToAction;
 }
 
-export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
+export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {
+  action?: string;
+}

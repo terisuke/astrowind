@@ -13,7 +13,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title:
+    'impression+ | Comprehensive Digital Marketing Service with SEO-Optimized Websites, NFC Digital Business Cards, and AI-Powered Customer Support',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +26,25 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: '資料ダウンロード',
+        href: '#',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: '詳細はこちら', href: '/services' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Impression+ Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      デジタルマーケティングツールを<br />1つのサービスで完結させる<br />
+      <span class="text-accent dark:text-white highlight"> サブスクリプションサービス</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        <span class="font-semibold">Impression+</span> は、ユーザーに合わせてホームページ、デジタル名刺、AIカスタマーサポートなど、デジタルマーケティングに必要なサービスを一括で提供するサービスです。
+        常に忙しい中小企業の経営者や個人事業主の方、またはデジタルマーケティングに興味があるけれど何から始めたらいいかわからない方に最適です。
+      </span>
     </Fragment>
   </Hero>
 
@@ -58,45 +56,45 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="特徴"
+    title="Impression+によって何が変わるか"
+    subtitle="Impression+は、今までの<br /><strong>1/3のコストと時間</strong>でデジタルマーケティングを始めることができます。"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Astro + Tailwind CSS の統合',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          '高い生産性、パフォーマンス、多用途性を提供する2つの優れたフレームワークをシームレスに統合したホームページ',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: '簡単にカスタム可能なコンポーネント',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Tailwind CSS で作成されたウィジェットは、マーケティング Web サイト、SaaS、ブログ、個人プロフィール、小規模ビジネスなど様々なシチュエーションに合わせてすぐに使用できます。',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'SEO対策万全なホームページ',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          '驚異的なページ速度はオーガニック検索のランキングに影響を与え、ユーザー エクスペリエンス (UI/UX) を向上させ、検索上位表示率を高めます。',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: '安価なデジタル名刺の提供',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'NFCデジタル名刺は、名刺のデータをスマートフォンに保存し、名刺の交換をスムーズにします。一枚あたりの単価を抑えているので、従来の名刺のようにたくさんの顧客に配ることもできます。',
+        icon: 'tabler:cards',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'AIカスタマーサポート',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'AIチャットボットは、24時間365日対応可能なカスタマーサポートを提供します。ユーザーの質問に即座に回答し、問題解決をサポートします。',
+        icon: 'tabler:robot',
+      },
+      {
+        title: '様々なマーケティングツールの一括運用',
+        description:
+          '従来違う会社に依頼していたサービスを1つのサービスにまとめることで、簡単な情報の共有やシームレスなサービス提供を可能に。',
+        icon: 'tabler:binary-tree',
       },
     ]}
   />
@@ -105,23 +103,20 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="HPの作成・管理"
+    title="軽量・高速なホームページ作成"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+        title: 'これまでにない高いユーザビリティ',
+        description: '軽量・高速なホームページにより閲覧者にストレスなく情報を提供できます。',
       },
       {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+        title: '簡単にカスタマイズ可能なスタイリング',
+        description: '4種類のテンプレートをさらにユーザーに向けてカスタマイズ！ユーザーに最適なデザインを提供します。',
       },
       {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+        title: '強力なSEO対策',
+        description: 'ホームページ作成にはSEOに特化したフレームワークを使用。検索エンジンの上位表示率は業界トップクラスです。',
       },
     ]}
     image={{
@@ -130,8 +125,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">最新技術を駆使した基盤構築</h3>
+      業界をリードするプラクティスを取り入れることで、競争優位性を獲得しましょう。
     </Fragment>
 
     <Fragment slot="bg">
@@ -143,25 +138,24 @@ const metadata = {
 
   <Content
     isAfterContent
+    tagline="デジタル名刺制作"
+    title="何度も使えるスマート名刺提供"
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: '高いカスタマイズ性',
+        description: `テンプレートを簡単に調整して、ブランドのアイデンティティと要件に合わせることができ、デジタル名刺を独自のものにし、時間を節約します。`,
       },
       {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+        title: '即時の情報更新',
+        description: '名刺情報をリアルタイムで更新できるため、常に最新の情報を提供できます。',
       },
       {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+        title: '環境に優しい',
+        description: '紙の名刺を使用せず、デジタルで情報を共有することで環境負荷を軽減します。',
       },
       {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+        title: '簡単な情報共有',
+        description: 'スマートフォンをかざすだけで名刺情報を簡単に共有でき、迅速かつ便利です。',
       },
     ]}
     image={{
@@ -169,7 +163,7 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">あなたのブランドを効果的に表現するデジタル名刺を提供します。</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -181,25 +175,25 @@ const metadata = {
   <Content
     isReversed
     isAfterContent
+    tagline="AIチャットボットの実装"
+    title="AIを活用した機会損失を減らすカスタマーサポート"
     items={[
       {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+        title: 'ユーザーエンゲージメントの向上',
+        description: 'AIチャットボットが顧客とのインタラクションを向上させ、迅速かつ正確な対応を提供します。',
       },
       {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+        title: '24時間365日のカスタマーサポート',
+        description: 'チャットボットは24時間365日稼働し、顧客の問い合わせにいつでも対応します。',
       },
       {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+        title: 'コスト削減',
+        description: 'AIを活用することで、人件費を削減し、効率的なカスタマーサポートを実現します。',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'データ収集と分析',
+        description:
+          'チャットボットを通じて得られる顧客データを活用し、サービスの改善やマーケティング戦略の最適化に役立てます。',
       },
     ]}
     image={{
@@ -207,39 +201,37 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+    <Fragment slot="content">成長と成功を促進するAIチャットボットソリューションを提供します。</Fragment>
   </Content>
+
+  <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Impression+で夢のウェブサイトをすぐに実現しましょう。"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+        title: 'ステップ 1: <span class="font-medium">お問い合わせ</span>',
+        description: 'まずはお問い合わせフォームからご連絡ください。あなたのニーズや目標についてお伺いします。',
+        icon: 'tabler:message',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'ステップ 2: <span class="font-medium">AIを使ったヒアリング</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          '最新のAI技術を活用し、詳細なヒアリングを行います。これにより、あなたのビジネスに最適なソリューションを提案することができます。',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'ステップ 3: <span class="font-medium">プランの決定</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'ヒアリング結果をもとに、最適なプランを決定します。デザイン、機能、コンテンツの全てをカスタマイズし、詳細な計画を立てます。',
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'ステップ 4: <span class="font-medium">お渡し（1ヶ月後）</span>',
+        description: '最終的なウェブサイトを1ヶ月以内にお渡しします。完成したウェブサイトは、すぐに運用開始できます。',
+        icon: 'tabler:calendar',
       },
     ]}
     image={{
@@ -251,114 +243,107 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="ホームページでよく使われるウィジェット"
+    subtitle="Tailwind CSSを使用して<br />ウェブサイトを構築するための頻繁に使用されるコンポーネントを提供します"
+    tagline="コンポーネント"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'ヘッダー',
+        description:
+          'ウェブサイトのナビゲーションを提供し、訪問者が簡単にサイト内を移動できるようにする重要な部分です。',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
+        title: 'ヒーロー',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+          'ウェブサイトの第一印象を決定づけるセクションで、訪問者の注目を引くための魅力的なビジュアルとメッセージを表示します。',
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: '特徴',
+        description: '企業やサービスの主要な特徴や強みを強調し、訪問者にアピールします。',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        title: 'コンテンツ',
+        description: 'サイトの中心的な情報やメッセージを伝える部分で、訪問者に価値のある情報を提供します。',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: 'コールトゥアクション',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+          '訪問者に特定の行動を促すための要素で、例えば「今すぐ購入」や「お問い合わせ」といったボタンがあります。',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        title: '価格設定',
+        description: '提供する製品やサービスの価格情報をわかりやすく表示し、訪問者が購入を検討しやすくします。',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: '推薦',
+        description: '顧客の声や評価を紹介するセクションで、他の訪問者に信頼感を与えます。',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        title: '連絡先',
+        description: '訪問者が簡単に連絡を取ることができるように、電話番号やメールアドレス、連絡フォームを提供します。',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        title: 'フッター',
+        description: 'ウェブサイトの最後に位置し、追加のナビゲーションリンクや重要な情報を提供します。',
         icon: 'flat-color-icons:database',
       },
     ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
+  />
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    title="ブログでさらに多くのコンテンツを見つけよう"
+    information={`このブログはAstroWindのドキュメントを表示するために使用されます。
+                        各新しい記事は、Astro + Tailwind CSSを使用してウェブサイトを作成するエキスパートになるために知っておくべき重要なステップです。
                 `}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="よくある質問"
+    subtitle="Impression+が提供する強力なシステムについての洞察を得るために、よくある質問をまとめました。あなたのウェブマーケティングがどのように向上するかを想像してみてください。"
+    tagline="FAQ"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Impression+サービスとは何ですか？',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Impression+は、中小企業向けにホームページ作成・管理、スマート名刺の提供、WebARを使ったPRページの作成を行うサービスです。これにより、企業のインターネットプレゼンスを向上させ、初対面の印象を強化することができます。',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Impression+のターゲット顧客は誰ですか？',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          '主にインターネットが得意ではない中小企業の代表者をターゲットとしています。簡単に使えるツールと専門的なサポートを提供し、オンラインプレゼンスを向上させるお手伝いをします。',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Impression+が提供するホームページはどのような特徴がありますか？',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Impression+では、AstroとFirebaseを活用したSEOに強い、表示速度の速いホームページを提供します。これにより、検索エンジンの結果で上位に表示されやすくなり、訪問者にストレスなく閲覧していただけます。',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'スマート名刺とは何ですか？',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'スマート名刺は、NFC技術を活用したデジタル名刺です。スマートフォンをかざすだけで、名刺情報を簡単に共有でき、紙の名刺よりも環境に優しく、最新の情報に即時更新することができます。',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'WebARを使ったPRページとは何ですか？',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'WebARを使ったPRページでは、拡張現実技術を利用して製品やサービスを視覚的に魅力的に紹介します。これにより、訪問者にインタラクティブな体験を提供し、より強い印象を与えることができます。',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Impression+のサポート体制について教えてください。',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Impression+では、サービス提供後のサポートも充実しています。納品後1年間は無料でリカバリーや代替サービスを提供し、技術的な問題が発生した場合でも迅速に対応いたします。また、必要に応じて専門家やパートナー企業と連携し、運用や保守のサポートも行います',
       },
     ]}
   />
@@ -380,20 +365,20 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'AIチャットに問い合わせる',
+        href: 'https://miibo.jp/chat/8b17da34-3051-4645-ad93-1556b02c04cb18f83c6e2b3ea?name=Cloudia',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:robot',
       },
     ]}
   >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+    <Fragment slot="title"> 興味を持っていただけましたか？ </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      現在Impression+はこちらのページか代理店を通じてしかお申し込みいただけません。まずはお気軽にお問い合わせください。
     </Fragment>
   </CallToAction>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
 </Layout>

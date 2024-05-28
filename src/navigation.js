@@ -3,35 +3,35 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Designs',
+      text: 'Templates',
       links: [
         {
-          text: 'SaaS向け',
-          href: getPermalink('/homes/saas'),
+          text: 'toC風',
+          href: getPermalink('/homes/toC'),
         },
         {
-          text: 'Startup向け',
-          href: getPermalink('/homes/startup'),
+          text: 'toB風',
+          href: getPermalink('/homes/toB'),
         },
         {
-          text: 'Mobile App向け',
+          text: 'Mobile App風',
           href: getPermalink('/homes/mobile-app'),
         },
         {
-          text: 'Personal向け',
+          text: '個人事業風',
           href: getPermalink('/homes/personal'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Functions',
       links: [
         {
           text: 'アンカーリンク例',
           href: getPermalink('/#features'),
         },
         {
-          text: 'サービスページ',
+          text: 'サービス紹介ページ',
           href: getPermalink('/services'),
         },
         {
@@ -57,7 +57,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'LP🚧',
+      text: '🚧',
       links: [
         {
           text: '見込み客獲得ページ',
@@ -165,7 +165,7 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/terisuke' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="/landing/src/assets/favicons/favicon32.png" alt="onWidget logo" loading="lazy"></img>
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="./src/assets/favicons/favicon32.png" alt="onWidget logo" loading="lazy"></img>
     Made by <a class="text-blue-600 underline dark:text-muted" href="https://cor-jp.com/"> Cor.Inc.</a> · All rights reserved.
   `,
 };

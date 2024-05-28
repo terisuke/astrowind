@@ -1,0 +1,347 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'SaaS Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'ログイン',
+          href: '#',
+        },
+        {
+          variant: 'primary',
+          text: 'サインアップ',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="SaaS Web デモ"
+    actions={[
+      { variant: 'primary', target: '_blank', text: '始める', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'もっと詳しく', href: '#features' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AstroWind ヒーロー画像',
+    }}
+  >
+    <Fragment slot="title">
+    究極の<span class="text-accent dark:text-white highlight">SaaS</span>パートナー
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">AstroWind</span>のSaaSソリューションでウェブサイト作成プロセスを向上させます。</span
+      >
+      Astro 4.0とTailwind CSSの力を組み合わせて、ブランドとオーディエンスに響くウェブサイトを作成します。
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="AstroWindを選ぶ理由"
+    subtitle="以下の各機能がAstroWindの価値提案を強化します。"
+    columns={2}
+    items={[
+      {
+        title: 'Astro 4.0とTailwind CSSの統合',
+        description:
+          '開発プロセスとエンドユーザー体験の両方を強化する強力な組み合わせを提供します。また、最適化されたパフォーマンスでダイナミックで視覚的に魅力的なウェブサイトを構築することができます。',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'スタートアップ、中小企業などに適した多様なデザイン',
+        description: `AstroWindを独自のブランディングとアイデンティティに調和させて簡単にカスタマイズできます。AstroWindの多様なデザインは、あなたのニーズに合わせて適応します。`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'ポートフォリオとマーケティングサイトのための簡単なカスタマイズ',
+        description:
+          '直感的なカスタマイズで、ポートフォリオの作品、ケーススタディ、プロジェクトのハイライト、関連コンテンツを簡単に紹介できます。創造的な専門家や専門知識を強調したい企業に理想的です。',
+        icon: 'tabler:writing',
+      },
+      {
+        title: '最適化されたランディングページと魅力的なブログ',
+        description: `ランディングページは訪問者を魅了し、特定のアクションを促すように戦略的に設計されています。さらに、ブログ作成機能は洞察を共有し、オーディエンスを引き付ける力を持っています。`,
+        icon: 'tabler:podium',
+      },
+      {
+        title: '高速なローディング時間と本番環境に対応したコード',
+        description: `Astro 4.0を使用することで、高速なローディングとシームレスなレンダリングを実現し、ブラウジングを向上します。コードはベストプラクティスに従い、ユーザー体験、SEOを改善し、直帰率を低減します。`,
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'SEO最適化された構造で可視性を向上',
+        description: `クリーンなコード、セマンティックなHTMLマークアップ、高速なローディングを使用してSEOベストプラクティスに従い、検索エンジンのランキングを向上します。AstroWindのSEO構造は、潜在的な顧客やクライアントに対する可視性を確保します。`,
+        icon: 'tabler:eyeglass',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title="使用事例"
+    subtitle="AstroWindの多様なテンプレートがさまざまな使用事例に最適なソリューションを提供し、成功を促進する方法を発見します。"
+    isReversed
+    items={[
+      {
+        title: '説明:',
+        description:
+          '大きな夢を持つスタートアップですか？ AstroWindがあなたの成功を後押しします。当社のテンプレートはシームレスなオンラインプレゼンスを構築し、初日から投資家と顧客を引き付けます。Astro 4.0とTailwind CSSは、印象的なレスポンシブサイトを保証し、多くのスタートアップがその旅を始め、オーディエンスと共鳴するのに役立っています。',
+      },
+      {
+        title: '利点:',
+        description: `スタートアップが多くの時間とリソースを投資することなく、迅速にプロフェッショナルなウェブサイトを作成できます。 <br /> 視覚的に魅力的なデザイン要素で印象的な第一印象を与え、スタートアップのユニークな価値提案を強調します。 <br /> あなたのウェブサイトがすべてのデバイスで素晴らしく機能することを保証します。 <br /> 魅力的なコンテンツ、明確なメッセージング、直感的なナビゲーションで潜在的な投資家と顧客を引き付けます。`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+      alt: 'スタートアップ画像',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        スタートアップの成功ストーリー: <br /><span class="text-2xl">AstroWindでのローンチ</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent={true}
+    items={[
+      {
+        title: '説明:',
+        description: `SaaSビジネスにとって、ユーザーエクスペリエンスは重要です。AstroWindはSaaSソリューションを直感的に紹介することを強化します。テンプレートのAstro 4.0とTailwind CSSの統合は、ユーザーフレンドリーな体験を保証し、あなたのソフトウェアの効率を反映します。オーディエンスにSaaSの価値とソリューションを伝えるためにページをカスタマイズします。`,
+      },
+      {
+        title: '利点:',
+        description: `あなたのSaaSウェブサイトに一貫性のあるユーザー中心のデザインを確保します。 <br /> 視覚的なエイズ、アニメーション、インタラクティブな要素を通じて複雑なSaaS機能を効果的に伝えます。 <br /> よく構造化されたレイアウトと明確なナビゲーションを通じてユーザーのニーズと痛みのポイントを優先します。 <br /> 戦略的に配置されたCTAで訪問者にアクションを促します。 <br /> あなたのSaaSウェブサイトがすべてのデバイスでシームレスに機能することを保証します。`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
+      alt: 'SaaSビジネス画像',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        SaaSショーケース: <br /><span class="text-2xl">ユーザーエクスペリエンスの効率化</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: '説明:',
+        description: `あなたのポートフォリオはあなたの傑作であり、AstroWindはあなたのキャンバスです。デザイナー、写真家、アーティスト、その他のクリエイティブな専門家であるかどうかにかかわらず、AstroWindはあなたが作品を優雅で洗練された方法で紹介することを可能にします。クリエイティブなプロジェクトを強調するために調整されたAstroWindのテンプレートは、あなたのポートフォリオを輝かせる視覚的に没入型の体験を提供します。`,
+      },
+      {
+        title: '利点:',
+        description: `あなたのクリエイティブな作品を紹介するための魅力的な背景として機能し、注目を集め、印象を残します。 <br /> あなたのユニークなスタイルと芸術的なビジョンを反映するためにポートフォリオをカスタマイズします。 <br /> 視覚を優先し、あなたの作品を高解像度の詳細で提示し、視聴者をあなたの作品に引き込みます。 <br /> 努力なくポートフォリオを探索できるシームレスなナビゲーションを可能にします。`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90oby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'ポートフォリオ画像',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        クリエイティブポートフォリオ: <br /><span class="text-2xl">あなたの作品を強調</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: '説明:',
+        description: `中小企業にとって、よく作られたウェブサイトはゲームチェンジャーになることがあります。AstroWindは中小企業が信頼できるオンラインプレゼンスを確立するだけでなく、訪問者を忠実な顧客に変えることを可能にします。テンプレートの思慮深いデザインと最適化機能は、あなたのウェブサイトが注目を集めるだけでなく、訪問者をシームレスな旅に導き、最終的にはコンバージョンにつながることを保証します。`,
+      },
+      {
+        title: '利点:',
+        description: `訪問者に信頼と信頼を植え付けるプロフェッショナルで洗練されたウェブサイトで中小企業を提示します。 <br /> 戦略的に配置されたCTA、ユーザーフレンドリーなフォーム、最適化されたレイアウトが協力してユーザーエンゲージメントとコンバージョンを促進します。 <br /> スムーズなブラウジング体験を保証し、直帰率を低減し、相互作用を促進します。`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaGотоby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: '中小企業画像',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        中小企業の成長: <br /><span class="text-2xl">訪問者を顧客に変える</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Pricing Widget ******************* -->
+
+  <Pricing
+    title="柔軟な価格プラン"
+    prices={[
+      {
+        title: '無料',
+        subtitle: '基本機能と多様なテンプレートへのアクセス',
+        price: '0',
+        period: '/ 月',
+        callToAction: {
+          target: '_blank',
+          text: '無料で始める',
+          href: '#',
+        },
+      },
+      {
+        title: 'プロ',
+        subtitle: 'プレミアムテンプレートと高度なカスタマイズ',
+        price: 15,
+        period: '/ 月',
+        callToAction: {
+          target: '_blank',
+          text: 'プロにアップグレード',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: '人気',
+      },
+      {
+        title: 'エンタープライズ',
+        subtitle: '大規模プロジェクト向けのカスタマイズソリューション',
+        price: 45,
+        period: '/ 月',
+        callToAction: {
+          target: '_blank',
+          text: 'エンタープライズ機能を解放',
+          href: '#',
+        },
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="よくある質問"
+    items={[
+      {
+        title: 'AstroWindはAstroとTailwind CSSの最新バージョンと互換性がありますか？',
+        description:
+          'はい、AstroWindはAstroとTailwind CSSの最新バージョンと互換性があります。これにより、これらの技術の全機能を活用しながらAstroWindの機能を利用できます。',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'AstroWindを個人プロジェクトと商用プロジェクトの両方で使用できますか？',
+        description: `もちろんです！AstroWindは多用途に使用でき、個人プロジェクトから商用プロジェクトまで幅広く対応しています。プロフェッショナルなポートフォリオの構築、スタートアップの立ち上げ、マーケティングウェブサイトの作成など、AstroWindがサポートします。`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'AstroWindを使用するために必要なコーディング知識はどの程度ですか？',
+        description:
+          'HTML、CSS、およびウェブ開発の基本的な知識があると便利ですが、ユーザーフレンドリーなインターフェースとカスタマイズオプションにより、コーディング経験が少ない人でも印象的なウェブサイトを作成できます。より高度なユーザーには、AstroWindが広範なカスタマイズ機能を提供します。',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'AstroWindのユーザーサポートは利用可能ですか？',
+        description: `もちろんです、専任のカスタマーサポートチームが質問や問題に対応します。サポートチャネルを通じてお気軽にお問い合わせください。喜んでサポートさせていただきます。`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="お問い合わせ"
+    subtitle="質問がある場合は、以下のフォームを使用してお問い合わせください。お手伝いさせていただきます！"
+    callToAction={{
+      text: 'お問い合わせ',
+      href: '/',
+    }}
+    items={[
+      {
+        title: 'メールでのお問い合わせ',
+        description: 'contact@support.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: '電話でのお問い合わせ',
+        description: '+1 (234) 567-890',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'フォローする',
+        description: '@example',
+        icon: 'tabler:brand-twitter',
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="AstroWindのブログで最新情報を入手"
+    information={`ウェブ開発、デザインのトレンド、AstroWindを効果的に使用するための記事、ガイド、チュートリアルのコレクションを探索してください。`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

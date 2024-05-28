@@ -24,13 +24,13 @@ const metadata = {
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
-        { text: 'Porfolio', href: '#porfolio' },
+        { text: 'Portfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
         { text: 'Github', href: 'https://github.com/onwidget' },
       ]}
       actions={[
         {
-          text: 'Hire me',
+          text: 'オファーする',
           href: '#',
         },
       ]}
@@ -43,14 +43,12 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+    title="サラ・ジョンソン"
+    tagline="個人ウェブデモ"
+    actions={[{ variant: 'primary', text: 'オファーする', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
+      私はビジュアルストーリーを作成することに情熱を注いでいるグラフィックデザイナーです。<br />ニューヨーク大学デザイン学部の学位を持ち、5年間の経験を持っています。私はブランドとデザインに活力を注ぎ、概念を魅力的な現実に変えます。
     </Fragment>
   </Hero>
 
@@ -86,47 +84,33 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      alt: 'カラフルな画像',
       loading: 'eager',
     }}
   >
-    <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
-      <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
-      </p>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">私について</h2>
+        私の創造的な旅へようこそ。私の仕事は、アイデアを生き生きとしたものにするという私のコミットメントの証です。各ピクセルが想像力のキャンバスにブラシストロークになります。
       <br />
-      <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
-      </p>
-      <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+        私は周囲の世界からインスピレーションを得ています。魅力的な小説のページから、タイポグラフィの複雑なディテール、または屋外の冒険中の自然の鮮やかな色彩まで。
+      <p>もっと私の作品について知りたい方は、私をフォローしてください：</p>
+      <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      </Fragment>
   </Content>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    id="resume"
-    title="Work experience"
+    title="職歴"
     items={[
       {
-        title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+        title: 'グラフィックデザイナー <br /> <span class="font-normal">ABCデザインスタジオ、ニューヨーク、NY</span> <br /> <span class="text-sm font-normal">2021 - 現在</span>',
+        description: `クライアントと協力してデザイン要件と目標を理解します。<br />ロゴ、カラーパレット、ブランドガイドラインを含むブランディングソリューションを開発します。<br />パンフレット、ポスター、デジタルアセットなどのマーケティング資料をデザインします。<br />ウェブサイトとアプリケーションのための視覚的に魅力的なユーザーインターフェースを作成します。`,
         icon: 'tabler:briefcase',
       },
       {
-        title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        title: 'ジュニアグラフィックデザイナー <br /> <span class="font-normal">XYZクリエイティブエージェンシー、ロサンゼルス、CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
+        description: `シニアデザイナーを支援してデザインコンセプトとビジュアルアセットを作成します。<br />ブランドアイデンティティとマーケティング資料の開発に貢献します。<br />キャンペーン全体で一貫したデザインを保証するためにマーケティングチームと協力します。<br />さまざまなデザインソフトウェアとツールで実践的な経験を積みます。`,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -136,15 +120,14 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    id="resume"
-    title="Education"
+    title="教育"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        title: `グラフィックデザインの修士 <br /> <span class="font-normal">ニューヨーク大学デザイン学部</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        title: `グラフィックデザインの学士 <br /> <span class="font-normal">ニューヨーク大学デザイン学部</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
         icon: 'tabler:school',
       },
     ]}
@@ -154,46 +137,46 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
+    title="スキル"
+    subtitle="デザインを通じて想像力を現実に変える私の能力を発見してください。"
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
       {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
+        title: 'グラフィックデザイン',
+        description: 'メッセージを効果的に伝える視覚的に魅力的なデザインを作成することに熟練しています。',
       },
       {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
+        title: 'ブランディングとアイデンティティ',
+        description: 'ロゴやブランドガイドラインを含む一貫したブランドアイデンティティを開発することに熟練しています。',
       },
       {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
+        title: 'ユーザー中心のデザイン',
+        description: 'ユーザーフレンドリーなインターフェースを作成し、ユーザーエクスペリエンスを最適化する経験があります。',
       },
       {
         title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
+        description: 'Photoshop、Illustrator、InDesignを使用して視覚要素を作成および編集することに熟練しています。',
       },
       {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
+        title: 'タイポグラフィ',
+        description: 'デザインの美学を向上させるためにタイプフェースを選択し、操作することに熟練しています。',
       },
       {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
+        title: '色彩理論',
+        description: '色を使用して感情を喚起し、視覚的な調和を向上させることに熟練しています。',
       },
       {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
+        title: '印刷およびデジタルデザイン',
+        description: '印刷物とデジタルプラットフォームの両方のデザインに精通しています。',
       },
       {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
+        title: '細部への注意',
+        description: 'すべてのデザイン作業で精度と品質を維持するために勤勉です。',
       },
       {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
+        title: '適応性',
+        description: '新しいデザイントレンド、技術、クライアントの好みに迅速に適応します。',
       },
     ]}
   />
@@ -201,36 +184,62 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    title="視覚的な物語を高める"
+    subtitle="ピクセルを超えたデザインの旅に乗り出し、想像力の領域に入ります。情熱と創造性が融合して魅力的な視覚的な物語を形成する私のポートフォリオを探索してください。"
     isReversed
     items={[
       {
-        title: 'Description:',
-        description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+        title: '説明：',
+        description: '技術革新を専門とするテックスタートアップ、Tech Innovatorsの包括的なブランドアイデンティティを開発しました。目標は、企業クライアントと技術愛好家の両方に共鳴する現代的でありながら親しみやすいイメージを伝えることでした。',
       },
       {
-        title: 'Role:',
-        description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+        title: '役割：',
+        description: 'コンセプトから実行までのブランディングプロセス全体を主導しました。革新を象徴するダイナミックなロゴを作成し、鮮やかなカラーパレットを選択し、企業用ステーショナリー、ウェブサイトグラフィック、ソーシャルメディアアセットをデザインしました。',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
+      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
+      alt: 'テックデザイン画像',
     }}
     callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
+      text: 'プロジェクトに行く',
       icon: 'tabler:chevron-right',
       href: '#',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+        プロジェクト1：<br /><span class="text-2xl">テックイノベーターのためのブランドアイデンティティ</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: '説明：',
+        description: '芸術と音楽のフェスティバル「ArtWave Fusion」のための魅力的なイベントポスターをデザインしました。このフェスティバルは、視覚芸術と音楽ジャンルのシナジーを紹介することを目的としています。フェスティバルの創造的なテーマを視覚的に魅力的なポスターに変換しました。大胆なタイポグラフィ、鮮やかな色、抽象的な要素を使用して、芸術と音楽の融合を描きました。デザインがフェスティバルの活気ある雰囲気を捉えることを確実にしました。'
+      }
+    ]}
+  >
+    image={{
+      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: '芸術と音楽のポスター画像',
+    }}
+    callToAction={{
+      text: 'プロジェクトに行く',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        プロジェクト2：<br /><span class="text-2xl">芸術＆音楽フェスティバルのイベントポスター</span>
       </h3>
     </Fragment>
 
@@ -246,66 +255,27 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
-        description:
-          'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
+        title: '説明：',
+        description: `エコ意識のあるファッションブランド、GreenVogueの電子商取引ウェブサイトを再設計しました。目的は、ブランドのオンラインプレゼンスを持続可能な倫理観と一致させ、ユーザーエクスペリエンスを向上させることでした。`,
       },
       {
-        title: 'Role:',
-        description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
+        title: '役割：',
+        description: `ブランドの価値観と顧客基盤を分析してデザイン方向を導きました。直感的なナビゲーションを備えた視覚的に魅力的なインターフェースを作成し、持続可能な素材を強調し、ユーザーフレンドリーなショッピング体験を統合しました。`,
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Art and Music Poster Image',
+      src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'ファッション電子商取引画像',
     }}
     callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
+      text: 'プロジェクトに行く',
       icon: 'tabler:chevron-right',
       href: '#',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Event poster for art & music festival</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
-      },
-      {
-        title: 'Role:',
-        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
-      },
-    ]}
-    image={{
-      src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Fashion e-commerce Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 3: <br /><span class="text-2xl">E-commerce website redesign for fashion brand</span>
+        プロジェクト3：<br /><span class="text-2xl">ファッションブランドのための電子商取引ウェブサイトの再設計</span>
       </h3>
     </Fragment>
 
@@ -317,61 +287,61 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Client testimonials"
-    subtitle="Discover what clients have to say about their experiences working with me."
+    title="クライアントの証言"
+    subtitle="私と一緒に働いたクライアントがどのような経験をしたかを発見してください。"
     testimonials={[
       {
-        testimonial: `She took our vague concept and turned it into a visual masterpiece that perfectly aligned with our goals. Her attention to detail and ability to translate ideas into compelling visuals exceeded our expectations.`,
-        name: 'Mark Thompson',
-        job: 'Creative director',
+        testimonial: `彼女は私たちの漠然としたコンセプトを視覚的な傑作に変え、私たちの目標と完全に一致させました。彼女の細部への注意とアイデアを魅力的なビジュアルに翻訳する能力は、私たちの期待を超えました。`,
+        name: 'マーク・トンプソン',
+        job: 'クリエイティブディレクター',
         image: {
           src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Mark Thompson Image',
+          alt: 'マーク・トンプソンの画像',
         },
       },
       {
-        testimonial: `She transformed our brand identity with her creative finesse, capturing our essence in every element. Her dedication and talent truly shine through her work.`,
-        name: 'Emily Martinez',
+        testimonial: `彼女は創造的な洗練さで私たちのブランドアイデンティティを変革し、すべての要素で私たちの本質を捉えました。彼女の献身と才能は彼女の仕事を通じて真に輝いています。`,
+        name: 'エミリー・マルティネス',
         job: 'CEO',
         image: {
           src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
-          alt: 'Emily Martinez Image',
+          alt: 'エミリー・マルティネスの画像',
         },
       },
       {
-        testimonial: `She has an uncanny ability to communicate emotions and stories. She crafted a logo for our NGO that not only represents our cause but also evokes empathy. Her professionalism and commitment make her a designer of exceptional caliber.`,
-        name: 'Laura Simmons',
-        job: 'Founder of an NGO',
+        testimonial: `彼女は感情や物語を伝える非凡な能力を持っています。彼女は私たちのNGOのために、私たちの原因を代表するだけでなく共感を呼び起こすロゴを作成しました。彼女のプロフェッショナリズムとコミットメントは、彼女を特別なカリバーのデザイナーにしています。`,
+        name: 'ローラ・シモンズ',
+        job: 'NGOの創設者',
         image: {
           src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Laura Simmons Image',
+          alt: 'ローラ・シモンズの画像',
         },
       },
       {
-        testimonial: `We entrusted Sarah with revamping our website's user interface, and the results were astounding. Her intuitive design sense enhanced user experience, leading to a significant increase in engagement. She's a designer who truly understands the synergy of aesthetics and functionality.`,
-        name: 'Alex Foster',
-        job: 'Director of web services',
+        testimonial: `私たちはサラにウェブサイトのユーザーインターフェースの刷新を任せ、その結果は驚異的でした。彼女の直感的なデザインセンスがユーザーエクスペリエンスを向上させ、エンゲージメントの大幅な増加につながりました。彼女は美学と機能性のシナジーを真に理解しているデザイナーです。`,
+        name: 'アレックス・フォスター',
+        job: 'ウェブサービスディレクター',
         image: {
           src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Alex Foster Image',
+          alt: 'アレックス・フォスターの画像',
         },
       },
       {
-        testimonial: `She took our vision and elevated it beyond imagination. Her ability to capture brand essence and translate it into design is nothing short of remarkable. Working with her has been an inspiring journey.`,
-        name: 'Jessica Collins',
-        job: 'Product Manager',
+        testimonial: `彼女は私たちのビジョンを想像を超えて高め、ブランドの本質を捉えてデザインに変換する能力は本当に顕著です。彼女との作業は刺激的な旅でした。`,
+        name: 'ジェシカ・コリンズ',
+        job: 'プロダクトマネージャー',
         image: {
-          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
-          alt: 'Jessica Collins Image',
+          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaGooto1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
+          alt: 'ジェシカ・コリンズの画像',
         },
       },
       {
-        testimonial: `Her ability to transform concepts into captivating visuals is nothing short of extraordinary. She took our event poster idea and turned it into a visual masterpiece that perfectly captured the essence of our festival. Sarah's dedication, creativity, and knack for delivering beyond expectations make her an invaluable asset to any project.`,
-        name: 'Michael Carter',
-        job: 'Event Coordinator',
+        testimonial: `彼女はコンセプトを魅力的なビジュアルに変換する非凡な能力を持っています。彼女は私たちのイベントポスターのアイデアを視覚的な傑作に変え、私たちのフェスティバルの本質を完璧に捉えました。サラの献身、創造性、期待を超える能力は、どんなプロジェクトにも欠かせない貴重な資産です。`,
+        name: 'マイケル・カーター',
+        job: 'イベントコーディネーター',
         image: {
           src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Michael Carter Image',
+          alt: 'マイケル・カーターの画像',
         },
       },
     ]}
@@ -380,12 +350,12 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    title="一緒に創造しましょう"
+    subtitle="あなたのビジョンを魅力的なデザインに変える準備はできていますか？"
     actions={[
       {
         variant: 'primary',
-        text: 'Hire me',
+        text: 'オファーする',
         href: '/',
       },
     ]}
@@ -395,8 +365,8 @@ const metadata = {
 
   <BlogLatestPosts
     id="blog"
-    title="Explore my insightful articles on my blog"
-    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+    title="私のブログで洞察に満ちた記事を探索してください"
+    information={`デザインの知恵と創造的なインスピレーションの領域に飛び込み、貴重な洞察、実用的なヒント、そして創造的な旅を豊かにする魅力的な物語を発見してください。`}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>

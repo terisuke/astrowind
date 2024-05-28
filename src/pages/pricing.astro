@@ -16,94 +16,100 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    tagline="料金システム"
+    title="選べる最適な価格設定"
+    subtitle="月額or買い切りなので初期費用は不要&月額契約も1年以降はいつでも解約可能！"
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="料金プラン(税抜)"
+    subtitle="必要なサービスを納得の価格で"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: 'ホームページ制作・管理',
+        subtitle: '最初のステップとして',
+        price: '6000~',
+        period: '/月額',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Top+4ページまで¥6000',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: '追加1ページごとに +¥1000/月(税抜)',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: '使用する画像がない場合弊社でテンプレートを用意',
           },
           {
-            description: 'In hac habitasse',
+            description: '内容更新無料(ブログ記事追加・サイト大幅更新は除く)',
+          },
+          {
+            description: '独自ドメイン取得代行可(追加料金不要)',
+          },
+          {
+            description: '契約1年以降はいつでも解約可能',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
-      },
-      {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Proin vel laoreet',
-          },
-          {
-            description: 'Ut efficitur habitasse egestas',
-          },
-          {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
+          text: '申し込む',
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'recommended',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'デジタル名刺提供',
+        subtitle: '忘れられない印象を与える',
+        price: 3000,
+        period: '/枚',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: '2枚目以降は¥1000/枚',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'レイアウトは弊社でデザイン代行可',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'VR名刺も対応可(3Dデータ提供必要)',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'データ内容は購入後1年は無料で変更',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
+          text: '申し込む',
+          href: '#',
+        },
+      },
+      {
+        title: 'AIボットアプリ提供',
+        subtitle: '24時間365日高い品質の顧客対応を',
+        price: 3000,
+        period: '/月額',
+        items: [
+          {
+            description: 'AIの追加学習可能(無料)',
+          },
+          {
+            description: '学習データ形式、量は無制限',
+          },
+          {
+            description: '追加でエージェントを作成する場合は¥1500/月',
+          },
+          {
+            description: 'API料金は一切負担なし',
+          },
+          {
+            description: 'LINEなど他SNSとの連携も応相談',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: '申し込む',
           href: '#',
         },
       },
@@ -113,38 +119,42 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="料金設定に関して"
+    subtitle="すべてシンプルなワンプラン！"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
+        title: 'わかりやすい料金設定',
+        description:
+          '各プランにはすべて初期費用・製作費用・月額費用・保守費用などが含まれています。余計な費用がかからないので安心して契約できます',
         icon: 'tabler:stairs',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
+        title: 'まとめて契約するとよりお得に',
+        description:
+          '2つ以上のサービスをまとめてご契約いただくと、合計金額から10%オフ!<br />(サブスクリプションの場合は毎月のお支払いが10%オフ)',
         icon: 'tabler:flip-vertical',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
+        title: '万全のセキュリティ',
+        description:
+          'すべてのサービスに関わる情報をまとめて管理するので情報管理は楽々♪Google Cloud Platformを使用しているので常に最新のセキュリティ対策をとっています',
         icon: 'tabler:shield-lock',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
+        title: 'オプション追加も可能',
+        description: `必要に応じて随時プランを柔軟に変更可能！ユーザーに寄り添ったサービスを心がけています。`,
         icon: 'tabler:accessible',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
+        title: '最新のシステムに自動アップデート',
+        description: '新しいリリースの度にシステムを更新！常に最新の技術を使って質の高いサービスを提供していきます。',
         icon: 'tabler:chevrons-up',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: '素早く丁寧なサポート',
+        description:
+          '24時間対応しているAIチャットをはじめ、様々な方法でサポートを提供しています。お客様のご要望にお応えします！',
         icon: 'tabler:headset',
       },
     ]}
@@ -154,36 +164,36 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="サービスの流れ"
+    tagline="通常、契約からサービス提供開始まで1ヶ月ほどです。"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'プランを比較する',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'お申し込み',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'AIを用いたお打ち合わせ',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'お申し込みプランの確認',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: '契約・(必要な場合)追加のお打ち合わせ',
         icon: 'tabler:number-5',
       },
       {
-        title: 'Confirmation',
+        title: 'サービスのテスト提供・動作確認',
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'リリース！(契約から通常1ヶ月程度)',
         icon: 'tabler:number-7',
       },
     ]}
@@ -196,34 +206,29 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    title="FAQ"
+    subtitle="適正なプランを決定する際に参考になるような質問と回答を掲載しています。"
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
-        description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+        title: '支払い方法はどのようなものがありますか？',
+        description: 'クレジットカード、銀行振込、PayPalなど、多様な支払い方法を受け付けています。',
       },
       {
-        title: 'Is there a trial period for the different plans?',
-        description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+        title: '初期費用はかかりますか？',
+        description: 'いいえ、初期費用は不要です。すべてのプランは月額料金のみです。',
       },
       {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+        title: '月額料金の請求サイクルはどうなっていますか？',
+        description: '月額料金は月末締め、翌月末に請求されます。',
       },
       {
-        title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+        title: '料金に含まれるサービスは何ですか？',
+        description: '各プランには、制作、管理、更新、サポートなどの全サービスが含まれています。',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
-        description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+        title: '追加オプションの料金はどうなっていますか？',
+        description: '必要に応じてプランに追加オプションを選択できます。具体的な料金はサービスの詳細欄を確認の上お問い合わせください。',
       },
     ]}
   />
@@ -231,13 +236,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="何か不明な点はありましたか?"
+    subtitle="下記コンタクトフォームからお気軽にご相談ください！"
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'お問い合わせ',
+        href: '/contact',
       },
     ]}
   />

@@ -1,0 +1,151 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Startup Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="スタートアップウェブデモ"
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'テンプレートを取得',
+        href: 'https://github.com/onwidget/astrowind',
+        icon: 'tabler:download',
+      },
+      { text: '詳細を学ぶ', href: '#features' },
+    ]}
+  >
+    <Fragment slot="title">
+      Astrowindのテンプレートであなたの<span class="hidden sm:inline">オンラインプレゼンスを</span>向上させましょう
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="font-semibold">Astrowind</span>のテンプレートでスポットライトを浴び、スタートアップのデジタルフットプリントを強化し、信頼を築き、リーチを拡大しましょう。
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="gxBkghlglTg" title="Astroが発売されました...これが究極のウェブフレームワークになるのでしょうか？" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="私たちについて"
+    subtitle="夢を見事な現実に変える魔法を信じています。共通のビジョンを持つ情熱的な開発者たちによって設立された私たちは、ウェブサイト作成プロセスを簡素化することを目指しています。私たちのテンプレートは、Astro 4.0の革新とTailwind CSSの多様性を組み合わせ、これまでにない形で独自のブランドアイデンティティを表現することを可能にします。"
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Astrowindの印象的な影響を発見"
+    subtitle="以下の数字は、ユーザーが私たちに寄せる信頼と、私たちが彼らにもたらした顕著な成果を反映しています。"
+    stats={[
+      { title: 'ダウンロード数', amount: '182K' },
+      { title: 'ウェブサイトの立ち上げ', amount: '87' },
+      { title: 'ユーザーレーティング', amount: '4.8' },
+      { title: '満足しているクライアント', amount: '116K' },
+    ]}
+  />
+
+  <!-- Brands Widget ****************** -->
+
+  <Brands
+    title="パートナーシップとコラボレーション"
+    subtitle="Astrowindでは、協力を通じて革新を推進し、卓越した体験を創出する力を信じています。"
+    icons={[]}
+    images={[
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
+        alt: 'Paypal',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
+        alt: 'Visa',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
+        alt: 'Ebay',
+      },
+
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
+        alt: 'Youtube',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
+        alt: 'Microsoft',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
+        alt: 'Node JS',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
+        alt: 'Google',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
+        alt: 'Meta',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
+        alt: 'Yahoo',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="私たちはどのようなサービスを提供していますか？"
+    subtitle="ビジネス、ポートフォリオ、eコマース、ブログなど、さまざまな業界や目的に適したウェブサイトテンプレートを幅広く提供しています。"
+    items={[
+      {
+        title: 'インストール手順',
+        description:
+          '購入したテンプレートをダウンロードし、さまざまなウェブサイトプラットフォームやコンテンツ管理システムにインストールするための明確な指示を提供します。',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'デモとプレビュー',
+        description:
+          '顧客が購入前に選択したテンプレートがどのように見え、機能するかを確認できるインタラクティブなデモとプレビューを提供します。',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'テクニカルサポート',
+        description:
+          'テンプレートやその実装に関連する技術的な問題に対する顧客サポートを提供します。',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>

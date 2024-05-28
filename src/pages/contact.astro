@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
@@ -12,67 +11,121 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Contact" title="お問い合わせページ" />
 
-  <ContactUs
+  <!-- Custom Contact Form **************** -->
+
+  <div class="relative max-w-7xl mx-auto px-4 lg:py-20 md:px-6 md:py-16 py-12 text-default">
+    <div class="text-center max-w-3xl mb-8 md:mb-12 md:mx-auto">
+      <h2 class="font-bold font-heading leading-tighter tracking-tighter md:text-4xl text-3xl text-heading">
+        お気軽にお問い合わせください！
+      </h2>
+      <p class="text-muted mt-4 text-xl">
+        より迅速な回答のために、まずはFAQセクションをご覧ください。<br />お探しの解決策がそこにあるかもしれません！<br
+        />
+        それでも解決しない場合は、サポートチームが喜んでお手伝いします。
+      </p>
+    </div>
+  </div>
+  <div
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
-
+    class="flex flex-col backdrop-blur bg-white border dark:bg-slate-900 rounded-lg border-gray-200 dark:border-gray-700 lg:p-8 max-w-xl mx-auto p-4 shadow sm:p-6 w-full"
+  >
+    <form action="https://ssgform.com/s/pHF6ro94xGIy" method="post">
+      <div class="mb-6">
+        <label for="name" class="block font-medium text-sm text-gray-700">お名前</label>
+        <input
+          type="text"
+          name="お名前"
+          id="name"
+          required="required"
+          class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full"
+          autocomplete="on"
+          placeholder=""
+        />
+      </div>
+      <div class="mb-6">
+        <label for="email" class="block font-medium text-sm text-gray-700">メールアドレス</label>
+        <input
+          type="email"
+          name="メールアドレス"
+          id="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+          required="required"
+          class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full"
+          autocomplete="on"
+          placeholder=""
+        />
+      </div>
+      <div class="mb-6">
+        <label for="textarea" class="block font-medium text-sm text-gray-700">お問い合わせ内容</label>
+        <textarea
+          name="お問い合わせ内容"
+          id="textarea"
+          required="required"
+          class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full"
+          rows="4"></textarea>
+      </div>
+      <div class="flex items-start mt-3">
+        <div class="flex mt-0.5">
+          <input
+            type="checkbox"
+            id="disclaimer"
+            name="disclaimer"
+            class="block bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700 px-4 py-3 rounded-lg text-md w-full cursor-pointer mt-1"
+          />
+        </div>
+        <div class="ml-3">
+          <label for="disclaimer" class="dark:text-gray-400 text-sm text-gray-600 cursor-pointer select-none">
+            このお問い合わせフォームを送信することにより、お客様は個人情報の収集を承認し、同意したものとみなされます。
+          </label>
+        </div>
+      </div>
+      <div class="grid mt-10">
+        <button type="submit" class="btn-primary">送信する</button>
+      </div>
+      <div class="text-center mt-3">
+        <p class="dark:text-gray-400 text-sm text-gray-600">
+          通常、3営業日以内に返信させていただきます。もし3営業日以内に返事がなかった場合、送信ミスの可能性もありますので再度送っていただけますと幸いです。
+        </p>
+      </div>
+    </form>
+  </div>
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="その他のお問い合わせ方法"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'AI Chatbot',
+        description: `24時間365日、AIチャットボットがお手伝いします。下記をタップして、試してみてください！`,
       },
       {
-        title: 'Contact sales',
+        title: '営業お問い合わせ',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          '営業時間内にお問い合わせいただければ、営業担当者がお手伝いします。営業時間は月曜日から金曜日の9:00〜17:00です。',
       },
       {
-        title: 'Technical support',
+        title: '技術サポート',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+          'NFCカードなどツールの不具合については、技術サポートがお手伝いします。事前にメールまたはお問い合わせフォームから連絡の上、下記住所まで着払いでお送りください。',
       },
       {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
+        title: 'Chat with AI',
+        description: 'AI-Cloudia',
         icon: 'tabler:headset',
+        href: 'https://miibo.jp/chat/8b17da34-3051-4645-ad93-1556b02c04cb18f83c6e2b3ea?name=Cloudia',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'dumy@dumy.com',
         icon: 'tabler:mail',
       },
       {
         title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        description: '〒810-0001 福岡県福岡市中央区天神2-3-10-719',
         icon: 'tabler:map-pin',
+        href: 'https://maps.app.goo.gl/vuz6uSm8jau4B54b7',
       },
     ]}
   />

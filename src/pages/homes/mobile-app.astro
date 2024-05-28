@@ -18,7 +18,7 @@ const appStoreImg = '~/assets/images/app-store.png';
 const appStoreDownloadLink = 'https://www.apple.com/jp/app-store/';
 
 const googlePlayImg = '~/assets/images/google-play.png';
-const googlePlayDownloadLink = 'https://play.google.com/store/games?hl=ja&gl=US';
+const googlePlayDownloadLink = 'https://play.google.com/store/games?hl=ja-JP';
 
 const metadata = {
   title: 'Mobile App Homepage',
@@ -31,13 +31,13 @@ const metadata = {
     <Header
       position="left"
       links={[
-        { text: 'Services', href: '#' },
-        { text: 'Features', href: '#' },
-        { text: 'About', href: '#' },
+        { text: 'Service', href: '#' },
+        { text: 'Feature', href: '#' },
+        { text: 'Introduction', href: '#' },
       ]}
       actions={[
         {
-          text: 'Download',
+          text: 'ダウンロード',
           href: '#download',
         },
       ]}
@@ -49,30 +49,29 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="スマホアプリページデモ"
+    tagline="モバイルアプリWebデモ"
     image={{
       src: 'https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'AstroWind Hero Image',
+      alt: 'AstroWind ヒーロー画像',
     }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight"> Impression+ App </span>
-      <br />
-      初めましてに驚きを
+      可能性を広げる<br />
+      <span class="text-accent dark:text-white highlight">AstroWind</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline"> あなたのビジネスにデジタルマーケティングを取り入れましょう。 </span>
-      ダウンロードして、顧客に新しい体験を提供しましょう。
+      <span class="hidden sm:inline"> あなたの指先で無限の創造性を解き放つ：革新的なデザインへの入口。 </span>
+      今すぐダウンロードして、かつてないほどのプロジェクトへと旅立ちましょう。
     </Fragment>
 
     <div slot="actions" class="flex max-w-sm gap-4">
       <Button variant="link" href={appStoreDownloadLink}>
-        <Image src={appStoreImg} alt="App Store Image" width={200} />
+        <Image src={appStoreImg} alt="App Store 画像" width={200} />
       </Button>
 
       <Button variant="link" href={googlePlayDownloadLink}>
-        <Image src={googlePlayImg} alt="Google Play Image" width={200} />
+        <Image src={googlePlayImg} alt="Google Play 画像" width={200} />
       </Button>
     </div>
   </Hero2>
@@ -81,36 +80,36 @@ const metadata = {
 
   <Features3
     id="features"
-    title="アプリの使い方は？"
-    subtitle="書類を一から作成するのに何時間も費やすことにうんざりしていませんか?私たちのアプリは革新的なソリューションを提供します。プロがデザインした豊富なテンプレートを使用して、数分で素晴らしいドキュメントを作成できるようになりました。今すぐテンプレートを試して違いを体験してください。"
-    tagline="Step-by-step guide"
+    title="アプリの使い方"
+    subtitle="一からドキュメントを作成するのに何時間もかかっていませんか？当社のアプリは革新的な解決策を提供します。プロフェッショナルにデザインされたテンプレートの幅広い選択肢で、数分で魅力的なドキュメントを作成できます。今すぐテンプレートを探索して、違いを体験してください。"
+    tagline="ステップバイステップガイド"
     columns={2}
     items={[
       {
         title: 'アプリをダウンロードしてインストールする',
-        description: `アプリストアからアプリをダウンロードして、新しい体験を始めましょう。`,
+        description: `デバイスのアプリストアまたは公式ウェブサイトからユーザーフレンドリーなアプリをダウンロードして、あなたの旅を始めましょう。`,
         icon: 'tabler:square-number-1',
       },
       {
-        title: 'Sign up',
-        description:
-          'Create your account by providing the necessary information, enabling you to access our full range of features.',
+        title: 'サインアップ',
+        description: '必要な情報を提供してアカウントを作成し、全ての機能にアクセスできるようにします。',
         icon: 'tabler:square-number-2',
       },
       {
-        title: 'Browse templates',
-        description: 'Explore our diverse collection of website templates, categorized for easy navigation.',
+        title: 'テンプレートを閲覧する',
+        description:
+          '簡単なナビゲーションのためにカテゴリ分けされたウェブサイトテンプレートの多様なコレクションを探索します。',
         icon: 'tabler:square-number-3',
       },
       {
-        title: 'Preview and select a template',
-        description: `Visualize the potential of each template through previews, then choose the one that aligns best with your project's needs.`,
+        title: 'テンプレートをプレビューして選択する',
+        description: `プレビューを通じて各テンプレートの可能性を視覚化し、プロジェクトのニーズに最も合ったものを選択します。`,
         icon: 'tabler:square-number-4',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
-      alt: 'Colorful Image',
+      alt: 'カラフルな画像',
     }}
   />
 
@@ -120,36 +119,35 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'User-friendly interface',
-        description:
-          'An intuitive and easy-to-navigate interface that allows users to quickly browse and find the templates they need.',
+        title: 'ユーザーフレンドリーなインターフェース',
+        description: 'ユーザーがテンプレートを素早く閲覧して見つけることができる直感的で使いやすいインターフェース。',
         icon: 'tabler:wand',
       },
       {
-        title: 'Personalization options',
+        title: 'パーソナライゼーションオプション',
         description:
-          'Include basic customization tools that let users modify text, colors, images, and other elements within the templates.',
+          'テンプレート内のテキスト、色、画像、その他の要素を変更できる基本的なカスタマイズツールを含みます。',
         icon: 'tabler:settings',
       },
       {
-        title: 'Ready-to-use components',
+        title: '使用準備完了のコンポーネント',
         description:
-          'Enhance your designs with ready-to-use elements like graphics, icons, and layouts, saving you time and boosting visual appeal.',
+          'グラフィック、アイコン、レイアウトなどの使用準備完了の要素でデザインを強化し、時間を節約し、視覚的魅力を高めます。',
         icon: 'tabler:template',
       },
       {
-        title: 'Preview Mode',
-        description: 'Provide a preview of each template, allowing users to see how it looks before making a purchase.',
+        title: 'プレビューモード',
+        description: '各テンプレートのプレビューを提供し、購入前にどのように見えるかをユーザーに確認させます。',
         icon: 'tabler:carousel-horizontal',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'カラフルな画像',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">主な特徴</h3>
     </Fragment>
   </Content>
 
@@ -159,41 +157,41 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Offline Access',
-        description: 'Offer the option for users to download purchased templates for offline use.',
+        title: 'オフラインアクセス',
+        description: 'ユーザーが購入したテンプレートをオフラインで使用できるようにするオプションを提供します。',
         icon: 'tabler:wifi-off',
       },
       {
-        title: 'Secure Cloud Storage',
+        title: 'セキュアクラウドストレージ',
         description:
-          'Provide cloud storage for purchased templates, ensuring users can access and back up their templates from anywhere securely.',
+          '購入したテンプレートのクラウドストレージを提供し、ユーザーがどこからでも安全にテンプレートにアクセスしてバックアップできるようにします。',
         icon: 'tabler:file-download',
       },
       {
-        title: 'Regular Updates',
-        description: 'Continuously add new templates and features to keep the app fresh and engaging for users.',
+        title: '定期的な更新',
+        description: '新しいテンプレートと機能を継続的に追加し、アプリを新鮮で魅力的に保ちます。',
         icon: 'tabler:refresh',
       },
       {
-        title: 'Wishlist',
-        description: `Allow users to create a wishlist of templates they're interested in, making it easier for them to revisit and potentially purchase later.`,
+        title: 'ウィッシュリスト',
+        description: `ユーザーが興味のあるテンプレートのウィッシュリストを作成できるようにし、後で再訪して購入することが容易になります。`,
         icon: 'tabler:heart',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Vintage Image',
+      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'ヴィンテージ画像',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Other features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">その他の特徴</h3>
     </Fragment>
   </Content>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics of our app"
+    title="アプリの統計"
     stats={[
       { amount: '20K', icon: 'tabler:download' },
       { amount: '18.5K', icon: 'tabler:users' },
@@ -204,40 +202,40 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="What our users say?"
+    title="ユーザーの声"
     testimonials={[
       {
-        testimonial: `It's made exploring and downloading website templates a breeze. The interface is intuitive, and I had no trouble finding the perfect template for my project. It's an app that truly empowers users.`,
+        testimonial: `ウェブサイトのテンプレートを探索してダウンロードするのがとても簡単になりました。インターフェースは直感的で、プロジェクトに完璧なテンプレートを見つけるのに全く問題ありませんでした。これはユーザーを真に力づけるアプリです。`,
         name: 'Cary Kennedy',
-        job: 'Film director',
+        job: '映画監督',
         image: {
-          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Cary Kennedy Image',
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy 画像',
         },
       },
       {
-        testimonial: `The app's seamless download process and intuitive layout have made selecting templates an enjoyable experience. Being able to preview and experiment with different designs before committing has saved me time and ensured I get the perfect look for my website.`,
+        testimonial: `アプリのシームレスなダウンロードプロセスと直感的なレイアウトにより、テンプレートの選択が楽しい経験になりました。異なるデザインをプレビューして試すことができるため、時間を節約し、ウェブサイトに完璧なルックを確保できました。`,
         name: 'Josh Wilkinson',
-        job: 'Product Manager',
+        job: 'プロダクトマネージャー',
         image: {
-          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Josh Wilkinson Image',
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson 画像',
         },
       },
       {
         testimonial:
-          'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+          '数分でプロフェッショナルなウェブサイトテンプレートをダウンロードして使用できました。ステップバイステップのプロセスとユーザーフレンドリーなインターフェースにより、プロがデザインしたようなウェブサイトを簡単に作成できました。',
         name: 'Sidney Hansen',
-        job: 'Decorator',
+        job: 'デコレーター',
         image: {
-          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Sidney Hansen Image',
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWペfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen 画像',
         },
       },
     ]}
     callToAction={{
       target: '_blank',
-      text: 'Read more testimonials',
+      text: 'さらにユーザーの声を読む',
       href: 'https://github.com/onwidget/astrowind',
       icon: 'tabler:chevron-right',
     }}
@@ -246,31 +244,31 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Still have some doubts?"
+    title="まだ疑問がありますか？"
     items={[
       {
-        title: 'What does this app do?',
+        title: 'このアプリは何をしますか？',
         description:
-          'This app provides a platform for you to easily browse, purchase, download, and use a wide range of website templates for your projects.',
+          'このアプリは、プロジェクト用の幅広いウェブサイトテンプレートを簡単に閲覧、購入、ダウンロード、使用できるプラットフォームを提供します。',
       },
       {
-        title: 'How can this app solve my problem?',
+        title: 'このアプリはどのように問題を解決しますか？',
         description:
-          'This app streamlines the process of finding and implementing professional website designs, saving you time and effort in creating visually appealing and functional websites.',
+          'このアプリは、プロフェッショナルなウェブサイトデザインを見つけて実装するプロセスを合理化し、視覚的に魅力的で機能的なウェブサイトを作成するための時間と労力を節約します。',
       },
       {
-        title: 'Is it available for my device?',
-        description: `Our app is designed for compatibility across various devices and platforms, ensuring accessibility whether you're using a smartphone, tablet, or computer.`,
+        title: '私のデバイスで利用できますか？',
+        description: `当社のアプリは、スマートフォン、タブレット、コンピューターを含むさまざまなデバイスやプラットフォームでの互換性を確保するように設計されています。`,
       },
       {
-        title: 'What makes this app different from others?',
+        title: 'このアプリは他のアプリと何が違いますか？',
         description:
-          'Our app stands out for its user-friendly interface, extensive template collection, and seamless integration of the purchasing and downloading process, making it highly efficient.',
+          '当社のアプリは、ユーザーフレンドリーなインターフェース、広範なテンプレートコレクション、購入とダウンロードプロセスのシームレスな統合により、高い効率性を実現しています。',
       },
       {
-        title: 'Are there any costs involved?',
+        title: '費用はかかりますか？',
         description:
-          'While the app itself may be free to download, there may be costs associated with purchasing specific templates based on your preferences and project requirements.',
+          'アプリ自体は無料でダウンロードできる場合がありますが、特定のテンプレートの購入には、あなたの好みやプロジェクトの要件に基づいて費用がかかる場合があります。',
       },
     ]}
   />
@@ -279,16 +277,16 @@ const metadata = {
 
   <CallToAction
     id="download"
-    title="Download our app now!"
-    subtitle="Access a variety of stunning templates, simplify your creative process, and elevate your online presence."
+    title="今すぐアプリをダウンロード！"
+    subtitle="さまざまな魅力的なテンプレートにアクセスし、創造的なプロセスを簡素化し、オンラインプレゼンスを向上させましょう。"
   >
     <div slot="actions" class="flex max-w-sm gap-4">
       <Button variant="link" href={appStoreDownloadLink}>
-        <Image src={appStoreImg} alt="App Store Image" width={200} />
+        <Image src={appStoreImg} alt="App Store 画像" width={200} />
       </Button>
 
       <Button variant="link" href={googlePlayDownloadLink}>
-        <Image src={googlePlayImg} alt="Google Play Image" width={200} />
+        <Image src={googlePlayImg} alt="Google Play 画像" width={200} />
       </Button>
     </div>
   </CallToAction>
